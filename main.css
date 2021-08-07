@@ -46,20 +46,28 @@ body{
   justify-content: space-between;
 }
 
-@keyframes key-visual-section-entry {
-  from{
-    transfrom: translateY(-60px);
-  }
-  to{
-    transfrom: translateY(0px);
-  }
+#key-visual-section header .left-title,
+#key-visual-section header .right-title {
+  animation-name: key-visual-section-header-entry;
+  animation-duration: 600ms;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
 }
 
-#key-visual-section header .left-title,
-#key-visual-section header .right-title,{
-  animation-name: key-visual-section-entry;
-  animation-duration: 600ms;
+#key-visual-section header .right-title {
+  animation-delay: 100ms;
 }
+
+@keyframes key-visual-section-header-entry {
+  from{
+    transform: translateY(-60px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+  
 
 #key-visual-section .main {
   width: 100%;
@@ -74,6 +82,34 @@ body{
   font-weight: 500;
   line-height: 0.9;
   margin: 0;
+  animation-name: key-visual-section-title-entry;
+  animation-delay: 100ms;
+  animation-duration: 800ms;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+#key-visual-section .second-line {
+  animation-delay: 200ms;
+}
+#key-visual-section .split-version {
+  animation-delay: 300ms;
+}
+
+@keyframes key-visual-section-title-entry {
+  from{
+    opacity: 0;
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transform: translateY(100%) rotateX(-80deg);
+  }
+  to{
+    opacity: 1;
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transform: translateY(0%) rotateX(0deg);
+  }
 }
 
 #key-visual-section .logo {
@@ -88,4 +124,21 @@ body{
   bottom: 40px;
   font-size: 0;
   outline: none;
+  animation-name: key-visual-section-logo-entry;
+  animation-delay: 600ms;
+  animation-duration: 600ms;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+@keyframes key-visual-section-logo-entry {
+  from{
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
