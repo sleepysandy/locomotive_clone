@@ -75,6 +75,7 @@ body{
   left: 0;
   bottom: 0;
   padding: 35px 0;
+  perspective: 600px;
 }
 
 #key-visual-section .title {
