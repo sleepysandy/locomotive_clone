@@ -12,6 +12,9 @@ body{
   font-family: 'Roboto', sans-serif;
   padding:0 40px;
   margin: 0;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
 #key-visual-section{
@@ -20,6 +23,7 @@ body{
   width: 100%;
   height: 100vh;
   position: relative;
+  min-height: 100vh;
 }
 
 #key-visual-section .split-version {
@@ -142,4 +146,10 @@ body{
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+#outline-section {
+  height: 200vh;
+  width: 100%;
+  display: block;
 }
