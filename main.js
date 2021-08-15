@@ -93,3 +93,10 @@ gsap.fromTo(document.querySelector('#key-visual-section .logo'), {
     },
   });
 
+
+gsap.to('#key-visual-section .divider'), {
+      scrollTrigger: {
+      trigger: '#outline-section',
+      start: 'top 60%',
+    },
+  };

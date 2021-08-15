@@ -259,6 +259,7 @@ body{
   transition-duration: 400ms;
   transition-timing-function:  var(--translate-timing-function);
   color: #fff;
+  cursor: pointer;
 }
 
 #outline-section .list-item{
