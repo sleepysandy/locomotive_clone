@@ -1,5 +1,5 @@
 :root{
-  --main-background-color: #d4c9c9;
+  --main-background-color: #cbd4c7;
   --translate-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); 
 }
 
@@ -431,7 +431,8 @@ body{
   right: 20px;
   top: 30%;
   z-index: 1;
-  color: #d4c9c9;
+  color: var(--main-background-color);
+  ;
   padding: 1.5rem 2.5rem;
   font-size: 1.25rem;
 }
