@@ -166,7 +166,7 @@ window.addEventListener('scroll', () =>{
 
 
 window.addEventListener('scroll', () =>{
-  const olsChild1SummaryImgEntry =document.querySelector('.summary-img');
+  const olsChild1SummaryImgEntry =document.querySelector('#outline-section-child1 .summary-img');
   if (window.scrollY >= 400) {
     olsChild1SummaryImgEntry.classList.add('summary-img-entry');
   }
@@ -176,7 +176,7 @@ window.addEventListener('scroll', () =>{
 
 
 window.addEventListener('scroll', () =>{
-  const olsChild1SummarySpeedTextEntry =document.querySelector('.summery-speed-text');
+  const olsChild1SummarySpeedTextEntry =document.querySelector('#outline-section-child1 .summery-speed-text');
   if (window.scrollY >= 1000) {
     olsChild1SummarySpeedTextEntry.classList.add('summary-speed-text-entry');
   }
@@ -184,7 +184,7 @@ window.addEventListener('scroll', () =>{
   }
 }, false);
 
-gsap.to(document.querySelector('#summary-speed-bubble'), {
+gsap.to(document.querySelector('#outline-section-child1 .summary-speed-bubble'), {
    scrollTrigger: {
     trigger: "#outline-section-child1 .summary-speed-bubble",
     start: "top 95%",
