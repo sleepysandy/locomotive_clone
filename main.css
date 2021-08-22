@@ -474,7 +474,7 @@ transition: opacity 600ms var(--translate-timing-function),transform 600ms var(-
 
 #outline-section-child1 .summary-img{
   opacity: .75;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
 }
 
 #outline-section-child1 .summary-img img{
